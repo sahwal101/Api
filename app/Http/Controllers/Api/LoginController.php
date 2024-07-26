@@ -8,9 +8,6 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
-
-
-
 use App\Models\User;
 
 
@@ -69,7 +66,7 @@ class LoginController extends Controller
         return response()->json([
             'data'=> $user,
             'succes'=> true,
-            'message'=> 'User Berhasil Dibuat',
+            'message'=> 'Register Sukses',
         ]);
     }
 }
