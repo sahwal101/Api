@@ -66,5 +66,10 @@ class LoginController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
+        return response()->json([
+            'data'=> $user,
+            'succes'=> true,
+            'message'=> 'User Berhasil Dibuat',
+        ]);
     }
 }
